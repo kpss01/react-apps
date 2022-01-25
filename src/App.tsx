@@ -1,25 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Card } from 'react-bootstrap';
 import './App.css';
+import { InfoForm } from './PersonalInfo/InfoForm';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className='container col-md-8'>
+          <Card style={{ marginTop:'4rem' }}>
+            <Card.Header as='h3' style={{ backgroundColor:" #cecece "}}>
+              Personal Info
+            </Card.Header>
+            <Card.Body>
+              <InfoForm/>
+            </Card.Body>
+          </Card>
+      </div>
     </div>
+    
   );
 }
 
