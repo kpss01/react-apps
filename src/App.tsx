@@ -1,21 +1,24 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 import './App.css';
-import { InfoForm } from './PersonalInfo/InfoForm';
+import {
+	BrowserRouter as Router,
+	Routes,
+	Route} from 'react-router-dom';
+
+import { ProjNavBar } from './NavBar/NavBar';
+import { PersonalInfo } from './PersonalInfo/PersonalInfo';
 
 function App() {
   return (
     <div>
-      <div className='container col-md-8'>
-          <Card style={{ marginTop:'4rem' }}>
-            <Card.Header as='h3' style={{ backgroundColor:" #cecece "}}>
-              Personal Info
-            </Card.Header>
-            <Card.Body>
-              <InfoForm/>
-            </Card.Body>
-          </Card>
-      </div>
+      <Router>
+           <ProjNavBar/>
+           <Routes>
+                 <Route  path='/' element={< PersonalInfo />}></Route>
+                 <Route path='/form' element={<PersonalInfo/>}></Route>
+          </Routes>
+       </Router>
     </div>
     
   );
