@@ -1,9 +1,9 @@
 import React from "react";
 import { useLocation } from "react-router";
+
 export const About = ()=>{
 
     const location = useLocation();
-    
 
     return (
         

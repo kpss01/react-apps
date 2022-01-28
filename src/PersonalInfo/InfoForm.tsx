@@ -2,22 +2,6 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router";
 import {state_arr,s_a} from './States&Cities';
 
-export interface IFormState{
-    firstName:string,
-    lastName:string,
-    dob:string,
-    occupation:string,
-    message:string,
-    addressLine1:string,
-    addressLine2:string,
-    city:string,
-    cities:string[],
-    state:string,
-    pincode:string,
-    textStyle:any
-    
-}
-
 export const InfoForm = () => {
 
     const naviagte = useNavigate();
