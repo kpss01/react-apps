@@ -1,13 +1,9 @@
-import React from 'react';
-import { Card } from 'react-bootstrap';
 import './App.css';
-import {
-	BrowserRouter as Router,
-	Routes,
-	Route} from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 import { ProjNavBar } from './NavBar/NavBar';
 import { PersonalInfo } from './PersonalInfo/PersonalInfo';
+import { About } from './PersonalInfo/About';
 
 function App() {
   return (
@@ -17,6 +13,7 @@ function App() {
            <Routes>
                  <Route  path='/' element={< PersonalInfo />}></Route>
                  <Route path='/form' element={<PersonalInfo/>}></Route>
+                 <Route path='/about' element={<About/>}></Route>
           </Routes>
        </Router>
     </div>

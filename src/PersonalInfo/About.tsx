@@ -1,16 +1,16 @@
 import React from "react";
-export class About extends React.Component<{}>{
+import { useLocation } from "react-router";
+export const About = ()=>{
 
-    constructor(props:any){
-        super(props)
-        console.log(props);
-    }
+    const location = useLocation();
+    
 
-    render(){
-        return (
-            <div>
-                <h1>About US</h1>
-            </div>
-        )
-    }
+    return (
+        
+        <div>
+            {console.log(location)}
+            {console.log(location.state)}
+            <h1>About US</h1>
+        </div>
+    )
 }

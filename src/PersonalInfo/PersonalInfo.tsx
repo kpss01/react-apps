@@ -10,10 +10,10 @@ export class PersonalInfo extends React.Component{
                 <div className='container col-md-8'>
                 <Card style={{ marginTop:'2rem' }}>
                     <Card.Header as='h3' style={{ backgroundColor:" #cecece "}}>
-                        Personal Info
+                    Personal Info
                     </Card.Header>
                     <Card.Body>
-                        <InfoForm/>
+                    <InfoForm/>
                     </Card.Body>
                 </Card>
             </div>
